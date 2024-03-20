@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "PressStart2P";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PressStart2P-Regular.ttf");
+}
+:root {
+  --button-bg-color: #36342F;
+  --other-text: #352C1B;
+  --border-color: #EEE2B7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "PressStart2P", sans-serif;
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=base.css.map */
