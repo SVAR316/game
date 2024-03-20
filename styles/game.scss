@@ -1,0 +1,65 @@
+.game{
+  background-image: url("../images/game/bg.png");
+  min-height: 100vh;
+  display: flex;
+  background-size: contain;
+}
+
+.hud{
+  display: flex;
+  position: absolute;
+  top: 49px;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 58px;
+
+  &-item{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-content{
+    &__username{
+      font-size: 32px;
+    }
+    &__cups{
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+      margin-top: 20px;
+      & img{
+        width: 44px;
+        height: 56px;
+      }
+      & p{
+        font-size: 32px;
+      }
+    }
+    &__camera{
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+      justify-content: flex-end;
+      & p {
+        font-size: 32px;
+      }
+    }
+    &__batery{
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
+      align-items: center;
+      margin-top: 41px;
+      justify-content: flex-end;
+      & p {
+        font-size: 32px;
+      }
+      & img{
+        margin-right: 16px;
+      }
+    }
+  }
+}

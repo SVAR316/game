@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+</head>
+<body>
+<!--HUD-->
+<div class="hud">
+    <div class="hud-item">
+        <p class="hud-content__username">Username</p>
+        <div class="hud-content__cups">
+            <img src="./images/icons/cup.png" alt="cup">
+            <p>00:32</p>
+        </div>
+    </div>
+    <div class="hud-item">
+        <div class="hud-content__camera">
+            <p>00:00</p>
+            <img src="./images/icons/camera.png" alt="camera">
+        </div>
+        <div class="hud-content__batery">
+            <p>50%</p>
+            <img src="./images/icons/batery.png" alt="batery">
+        </div>
+    </div>
+</div>
+<!--GAME SCENE-->
+<div class="game">
+    <div class="game-content">
+        <img style="position: absolute; left: 750px; bottom: 500px;" src="./images/icons/batery.png" alt="wall">
+        <img style="position: absolute; bottom: 0;" src="./images/icons/smallWall.png" alt="wall">
+        <img style="position: absolute; bottom: 0; left: 103px;" src="./images/icons/smallWall.png" alt="wall">
+
+        <img style="position: absolute; bottom: 144px;" id="drone" src="./images/icons/fpv_drone.png" alt="drone">
+
+        <img style="position: absolute; bottom: -10px; left: 550px;" src="./images/icons/highWall.png" alt="wall">
+        <img style="position: absolute; top: -100px; left: 550px;" src="./images/icons/middleWall.png" alt="wall">
+
+        <img style="position: absolute; bottom: -10px; left: 950px;" src="./images/icons/middleWall.png" alt="wall">
+        <img style="position: absolute; top: -100px; left: 950px;" src="./images/icons/highWall.png" alt="wall">
+
+        <img style="position: absolute; bottom: -10px; left: 1300px;" src="./images/icons/highWall.png" alt="wall">
+        <img style="position: absolute; top: -200px; left: 1300px;" src="./images/icons/middleWall.png" alt="wall">
+    </div>
+</div>
+
+<!--MODAL WINDOWS-->
+
+<div style="display: none" class="modal">
+        <div style="display: none" class="modal-content">
+            <p class="modal-content__title">ВЫ ПРОИГРАЛИ!</p>
+            <img class="modal-content__image" src="./images/icons/destoyFpv.png" alt="fpv">
+
+            <button class="modal-content__new-game">НАЧАТЬ ЗАНОВО</button>
+            <button class="modal-content__return">ВЕРНУТЬСЯ В МЕНЮ</button>
+        </div>
+
+        <div style="display: none" class="modal-content">
+            <p class="modal-content__title">РЕЗУЛЬТАТ NICKNAME: <br>00:34</p>
+            <img class="modal-content__image" src="./images/icons/cup.png" alt="fpv">
+
+            <button class="modal-content__new-game">НАЧАТЬ ЗАНОВО</button>
+            <button class="modal-content__return">ВЕРНУТЬСЯ В МЕНЮ</button>
+        </div>
+</div>
+</body>
+</html>
