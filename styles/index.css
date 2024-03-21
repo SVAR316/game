@@ -49,4 +49,9 @@
   cursor: pointer;
   background-color: transparent;
   background-image: url("../images/common/button.png");
-}/*# sourceMappingURL=index.css.map */
+}
+.main-content__button:disabled{
+  opacity: 50%;
+  cursor: initial;
+}
+/*# sourceMappingURL=index.css.map */
